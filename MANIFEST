@@ -1,0 +1,7 @@
+Changes
+MANIFEST
+README
+Makefile.PL
+Magpie.pm
+l33t.pm
+t/Acme-Magpie.t
