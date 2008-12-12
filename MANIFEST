@@ -2,6 +2,6 @@ Changes
 MANIFEST
 README
 Makefile.PL
-Magpie.pm
-l33t.pm
+lib/Acme/Magpie.pm
+lib/Acme/Magpie/l33t.pm
 t/Acme-Magpie.t
