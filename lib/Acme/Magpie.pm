@@ -8,8 +8,9 @@ use Devel::Symdump;
 
 sub import {
     my $self = shift;
-    for my $sym ( sort Devel::Symdump->rnew('main')->functions() ) {
-        next if $sym =~ /^Acme::Magpie/;
+    my $steal_from = caller;
+    for my $sym ( sort Devel::Symdump->rnew($steal_from)->functions() ) {
+        next unless $sym =~ /^\Q$steal_from/;
         print "$sym\n" if debug;
 
         if ( $self->shiny($sym) ) {
