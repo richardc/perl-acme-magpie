@@ -4,9 +4,11 @@ blib/
 \bCVS\b
 Makefile
 Makefile\.old
-\.cvsignore
+\.gitignore
+\.shipit
 MANIFEST.SKIP
 cover_db/
 pm_to_blib
 \.cvp$
 \.bs$
+^\.git/
