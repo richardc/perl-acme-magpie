@@ -1,7 +1,7 @@
 package Acme::Magpie;
 use strict;
 use vars qw/$VERSION %Nest %symtab/;
-$VERSION = 0.05;
+$VERSION = '0.06';
 
 use constant debug => 0;
 use Devel::Symdump;
